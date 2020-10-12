@@ -5,6 +5,9 @@
 A weather application to source current weather data by City.
 
 ## Version 1.0
+
+##### **Add Personal API Key**
+
 Current build searches weather by City, and returns:
 - City
 - Temp
