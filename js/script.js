@@ -1,8 +1,6 @@
 
 // Constants and variables
 
-const API_KEY = "INSERT YOUR API KEY HERE";
-
 const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather?q='; 
 
 
