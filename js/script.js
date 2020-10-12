@@ -3,7 +3,6 @@
 
 const API_KEY = "INSERT YOUR API KEY HERE";
 
-// const FORECAST_URL = 'https://api.openweathermap.org/data/2.5/forecast?q='
 const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather?q='; 
 
 
@@ -28,7 +27,6 @@ const yearEL = document.getElementById('year');
 // Event Listeners
 
 $form.on('submit', handleGetData);
-
 
 // Functions
 
@@ -66,42 +64,6 @@ function render() {
     $wicon.html(`<img src="icons/${icon}.png">`);
 
 }
-
-/*
-const city = $input.val('');
-
-$.ajax( {
-    url: FORECAST_URL,
-    dataType: 'json',
-    type: 'GET',
-    data: {
-        q: city,
-        appid: KeyboardEvent,
-        units: 'metric',
-        cnt: '10',
-    },
-    success: function(data) {
-        console.log('Received data:', data)
-        let wf = '';
-        wf += '<h2>' + data.city.name + '</h2>';
-        $.each(data.list, function(index, val) {
-            wf += '<p>'
-            wf += '<b>Day' + index + '</b>: '
-            wf += val.main.temp + '&degC'
-            wf += '<span> | ' + val.weather[0].description + '</span>';
-            wf += "<img src='https://openweathermap.org/img/w/" + val.weather[0].icon + ".png'>"
-            wf += '</p>'
-        });
-        $('#showWeatherForecast').html(wf);    
-    }
-});
-*/
-
-
-
-
-
-
 
 init();
 
