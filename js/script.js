@@ -1,6 +1,8 @@
 
 // Constants and variables
 
+{API_KEY} = CONFIG;
+
 const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather?q='; 
 
 let weatherData, userInput, year;
@@ -35,7 +37,7 @@ function handleGetData(event) {
 
     if(!userInput) return;
 
-    $.ajax(BASE_URL + userInput + '&units=imperial&appid=' + API_KEY)
+    $.ajax(BASE_URL + userInput + '&units=imperial&appid=' + {API_KEY})
     .then(function(data) {
         
         weatherData = data;
