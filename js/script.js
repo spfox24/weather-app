@@ -1,7 +1,7 @@
 
 // Constants and variables
 
-const {API_KEY} = CONFIG;
+// const {API_KEY} = CONFIG;
 
 const BASE_URL = 'https://app-proxify.herokuapp.com/api'; 
 
