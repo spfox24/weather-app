@@ -3,7 +3,7 @@
 
 const {API_KEY} = CONFIG;
 
-const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather?q='; 
+const BASE_URL = 'https://app-proxify.herokuapp.com/api'; 
 
 let weatherData, userInput, year;
 
@@ -37,7 +37,7 @@ function handleGetData(event) {
 
     if(!userInput) return;
 
-    $.ajax(BASE_URL + userInput + '&units=imperial&appid=' + API_KEY)
+    $.ajax(BASE_URL + '?city=' + userInput)
     .then(function(data) {
         
         weatherData = data;
